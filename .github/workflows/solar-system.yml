@@ -9,6 +9,8 @@ on:
     
 jobs:
     unit-testing:
+        env:
+          MONGODB_URI: ${{ vars.MONGODB_URI }}
         name: Unit Testing
         runs-on: ubuntu-latest
         steps:
