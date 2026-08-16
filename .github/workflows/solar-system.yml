@@ -10,7 +10,7 @@ on:
 jobs:
     unit-testing:
         env:
-          MONGO_URI: ${{ vars.MONGODB_URI }}
+          MONGO_URI: ${{ vars.MONGO_URI }}
         name: Unit Testing
         runs-on: ubuntu-latest
         steps:
