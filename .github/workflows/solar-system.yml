@@ -40,6 +40,10 @@ jobs:
 
 
     code-coverage:
+        env:
+          MONGO_URI: ${{ vars.MONGO_URI }}
+          MONGO_USERNAME: ${{ vars.MONGO_USERNAME }}
+          MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
         name: code-coverage
         runs-on: ubuntu-latest
         
